@@ -234,10 +234,10 @@ This framework cites published research, not intuition. Every core mechanism has
 If you use Honestly in research or a product, please cite:
 
 ```
-@misc{arf2026,
+@misc{honestly2026,
   title  = {Honestly (Honestly) v0.1},
   year   = {2026},
-  url    = {https://github.com/[your-handle]/AI-Reasoning-Framework},
+  url    = {https://github.com/MUZEEBURRAHAMAN/AI-Reasoning-Framework},
   note   = {Open-source reasoning methodology for reducing LLM sycophancy}
 }
 ```

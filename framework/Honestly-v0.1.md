@@ -236,7 +236,7 @@ Paste as Gem instructions. Gemini responds well to the numbered principle format
 
 ### Cursor (.cursor/rules/)
 
-Save as `.cursor/rules/arf.mdc`. Remove the response structure section (Cursor handles output format separately). Keep Principles 1-9 and the Quality Gates intact.
+Save as `.cursor/rules/honestly.mdc`. Remove the response structure section (Cursor handles output format separately). Keep Principles 1-9 and the Quality Gates intact.
 
 ### Any other model
 
