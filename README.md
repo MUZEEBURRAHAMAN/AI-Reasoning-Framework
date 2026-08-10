@@ -70,6 +70,7 @@ AI-Reasoning-Framework/
 │       ├── claude.md            ← Claude / Cowork / Projects
 │       ├── chatgpt.md           ← Custom GPTs
 │       ├── gemini.md            ← Gems
+│       ├── grok.md              ← Custom Agents / Custom Instructions
 │       └── cursor.md            ← .cursor/rules/
 │
 ├── benchmark/
@@ -135,7 +136,19 @@ Click the link, start chatting. No setup required.
 
 To build your own copy instead of using the shared one → see [`framework/platform-adapters/gemini.md`](framework/platform-adapters/gemini.md)
 
-### Option 6 — Cursor
+### Option 6 — Grok (Custom Agent or Custom Instructions)
+
+Grok has no public share link yet (no marketplace for configured agents as of 2026), so this one's a short manual setup:
+
+1. Go to grok.com and sign in
+2. Click your profile icon (bottom-left) → **Settings → Customize → Create Agent** (or **Settings → Custom Instructions** to apply it to all chats instead of one agent)
+3. Name it "Honestly — No Fluff"
+4. Paste the instructions from [`framework/platform-adapters/grok.md`](framework/platform-adapters/grok.md) (everything below the "paste below this line" marker — it's ~3,160 characters, under Grok's 4,000-character limit)
+5. Save
+
+Full guide → see [`framework/platform-adapters/grok.md`](framework/platform-adapters/grok.md)
+
+### Option 7 — Cursor
 
 1. Copy `platform-adapters/cursor.md` contents
 2. Save to `.cursor/rules/honestly.mdc` in your project
