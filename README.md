@@ -148,11 +148,17 @@ Grok has no public share link yet (no marketplace for configured agents as of 20
 
 Full guide → see [`framework/platform-adapters/grok.md`](framework/platform-adapters/grok.md)
 
-### Option 7 — Cursor
+### Option 7 — Cursor (project rule)
 
-1. Copy `platform-adapters/cursor.md` contents
-2. Save to `.cursor/rules/honestly.mdc` in your project
-3. Honestly applies to all Cursor agent sessions in that project
+1. In your project root, create `.cursor/rules/` if it doesn't exist
+2. Copy the contents below the "paste below this line" marker in [`framework/platform-adapters/cursor.md`](framework/platform-adapters/cursor.md)
+3. Save it as `.cursor/rules/honestly.mdc`
+4. In Cursor → Settings → Rules, confirm the rule shows as active
+5. Honestly now applies to every AI session (chat, Agent mode, Cmd+K) in that project
+
+Prefer it applied to every project instead of one at a time? Go to Cursor → Settings → Rules for AI and paste the same instructions block directly — no `.mdc` file needed.
+
+Full guide → see [`framework/platform-adapters/cursor.md`](framework/platform-adapters/cursor.md)
 
 ---
 

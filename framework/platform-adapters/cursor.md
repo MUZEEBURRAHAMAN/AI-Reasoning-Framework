@@ -9,7 +9,7 @@
 ## How to install
 
 1. In your project root, create the directory `.cursor/rules/` if it doesn't exist
-2. Save the file below as `.cursor/rules/arf.mdc`
+2. Save the file below as `.cursor/rules/honestly.mdc`
 3. In Cursor settings → Rules, confirm the rule is active
 4. Honestly now applies to every AI session in this project
 
@@ -27,7 +27,7 @@ Go to Cursor → Settings → Rules for AI → paste the instructions section di
 
 ---
 
-## .cursor/rules/arf.mdc — paste below this line
+## .cursor/rules/honestly.mdc — paste below this line
 
 ---
 description: Honestly — applies to all AI responses in this project
