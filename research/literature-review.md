@@ -11,7 +11,7 @@
 
 ### Sharma et al. 2023 — Sycophancy is Systematic
 
-**Citation:** Sharma, M., Tong, M., Korbak, T., Duenas, D., Askell, A., Bowman, S., ... & Perez, E. (2023). Towards Understanding Sycophancy in Language Models. *arXiv:2310.13548*.
+**Citation:** Sharma, M., Tong, M., Korbak, T., Duvenaud, D., Askell, A., Bowman, S. R., ... & Perez, E. (2023). Towards Understanding Sycophancy in Language Models. *arXiv:2310.13548*.
 
 **What it found:**
 
@@ -29,7 +29,7 @@ Key finding: when users expressed high confidence in a position, models were sig
 
 ### Dubois et al. 2026 — Ask Don't Tell
 
-**Citation:** Dubois, Y., Galambosi, B., Liang, P., & Hashimoto, T. (2026). Ask, Don't Tell: How Interrogative Prompting Defeats Sycophancy. *arXiv:2602.23971*.
+**Citation:** Dubois, M., Ududec, C., Summerfield, C., & Luettgau, L. (2026). Ask don't tell: Reducing sycophancy in large language models. *arXiv:2602.23971*. UK AI Security Institute.
 
 **What it found:**
 
@@ -47,7 +47,7 @@ Crucially: the single most effective intervention was *reframing user statements
 
 ### MONICA 2025 — Mid-Chain Sycophancy
 
-**Citation:** Zhang, L., Chen, H., Wang, X., & Liu, Y. (2025). MONICA: Monitoring Mid-Chain Sycophancy in Reasoning Models. *arXiv:2511.06419*.
+**Citation:** Hu, J., Yang, S., Gong, X., Wang, H., Liu, W., & Wang, D. (2025). MONICA: Real-Time Monitoring and Calibration of Chain-of-Thought Sycophancy in Large Reasoning Models. *arXiv:2511.06419*.
 
 **What it found:**
 
@@ -65,7 +65,7 @@ MONICA introduced automated monitoring methods for detecting mid-chain sycophanc
 
 ### SYCON-Bench 2025 — Measuring Sycophancy
 
-**Citation:** Hong, J., Kim, S., & Park, C. (2025). SYCON: A Multi-Turn Sycophancy Benchmark for Language Models. *EMNLP 2025 Findings*. arXiv:2410.XXXXX.
+**Citation:** Hong, J., Byun, G., Kim, S., & Shu, K. (2025). Measuring Sycophancy of Language Models in Multi-turn Dialogues. *Findings of the Association for Computational Linguistics: EMNLP 2025*, pages 2239–2259, Suzhou, China. arXiv:2505.23840.
 
 **What it found:**
 
