@@ -8,11 +8,20 @@
 
 ## How to install
 
+### One-click (use the shared Gem)
+
+👉 **[Open Honestly — No Fluff on Gemini](https://gemini.google.com/gem/1kc0g31WJG-OLZtKzymCC7JrQtMe9Q3mU?usp=sharing)**
+
+Click the link, start chatting. No setup required.
+
+### Build your own copy
+
 1. Go to gemini.google.com
-2. Click "Gems" in the left sidebar → "New Gem"
-3. Give it a name: "Honestly — Critical Reasoning Mode"
+2. Click "Gems" in the left sidebar → "New Gem" (or Settings & help → Gems if it's not in the sidebar)
+3. Give it a name: "Honestly — No Fluff"
 4. Paste the instructions below into the "Instructions" field
 5. Save
+6. Optional: click Share → Public (or "Anyone with the link") to get your own shareable link
 
 ### Optional: set a custom greeting
 "I'm running in Honestly mode — evidence-based, assumption-aware, and willing to push back. What are you working through?"

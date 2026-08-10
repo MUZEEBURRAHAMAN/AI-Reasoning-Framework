@@ -127,7 +127,15 @@ For a full guide with examples → see [`framework/platform-adapters/chatgpt.md`
 
 Full guide → see [`framework/platform-adapters/claude.md`](framework/platform-adapters/claude.md)
 
-### Option 5 — Cursor
+### Option 5 — Gemini (one-click Gem)
+
+👉 **[Open Honestly — No Fluff on Gemini](https://gemini.google.com/gem/1kc0g31WJG-OLZtKzymCC7JrQtMe9Q3mU?usp=sharing)**
+
+Click the link, start chatting. No setup required.
+
+To build your own copy instead of using the shared one → see [`framework/platform-adapters/gemini.md`](framework/platform-adapters/gemini.md)
+
+### Option 6 — Cursor
 
 1. Copy `platform-adapters/cursor.md` contents
 2. Save to `.cursor/rules/honestly.mdc` in your project
