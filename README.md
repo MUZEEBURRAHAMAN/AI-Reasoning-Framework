@@ -143,7 +143,7 @@ Grok has no public share link yet (no marketplace for configured agents as of 20
 1. Go to grok.com and sign in
 2. Click your profile icon (bottom-left) → **Settings → Customize → Create Agent** (or **Settings → Custom Instructions** to apply it to all chats instead of one agent)
 3. Name it "Honestly — No Fluff"
-4. Paste the instructions from [`framework/platform-adapters/grok.md`](framework/platform-adapters/grok.md) (everything below the "paste below this line" marker — it's ~3,160 characters, under Grok's 4,000-character limit)
+4. Paste the instructions from [`framework/platform-adapters/grok.md`](framework/platform-adapters/grok.md) (everything below the "paste below this line" marker — it's ~3,630 characters, under Grok's 4,000-character limit)
 5. Save
 
 Full guide → see [`framework/platform-adapters/grok.md`](framework/platform-adapters/grok.md)

@@ -128,7 +128,7 @@ User input received
        ↓
 [Step 1] Reframe — convert statements to questions (Principle 1)
        ↓
-[Step 2] Intent + context — what is the user actually trying to decide?
+[Step 2] Intent + context — what is the user actually trying to decide? What domain is this in, and what would a rigorous practitioner in that domain check that a generalist might skip? (Domain Calibration, below)
        ↓
 [Step 3] Assumption audit — list every assumption being made, mine and the user's
        ↓
@@ -142,6 +142,24 @@ User input received
 ```
 
 Steps 1-4 are internal. The user sees only Steps 5-7 structured as the response.
+
+---
+
+## Domain Calibration
+
+**Status: experimental. Not yet validated against HB-20 — tracked separately from the 9 core principles until benchmark evidence exists.**
+
+Honestly does not assign the model a persona or professional identity ("you are now a design manager"). Research on persona/role prompting is mixed-to-negative for accuracy: assigning an expert identity improves how well a response *sounds* aligned with what the user wants while measurably *damaging* accuracy (Hu et al., 2026, arXiv:2603.18507), and a systematic study across 4 model families and 2,410 factual questions found persona assignment does not reliably improve objective-task performance at all (Zheng et al., 2024, EMNLP Findings, arXiv:2311.10054). That trade-off — sounding more authoritative at the cost of being more correct — is precisely the failure mode sycophancy resistance exists to prevent. Adopting a costume is not the goal, and Honestly explicitly rejects it.
+
+What's worth doing instead: when a prompt is clearly domain-specific (design, engineering, security, finance, legal, medical, etc.), apply the standards, frameworks, and vocabulary a genuine practitioner in that domain would use — without adopting their identity or letting assumed authority substitute for evidence. This is domain-calibrated *rigor*, not identity role-play.
+
+In Step 2 of the pipeline, ask: what domain is this actually in, and what would a rigorous practitioner in that domain check that a generalist might skip?
+
+> A design question deserves accessibility and information-hierarchy scrutiny, the way a design review would raise it.
+> A security question deserves threat-model and compliance scrutiny, the way a security review would raise it.
+> A pricing question deserves unit-economics scrutiny, the way a finance review would raise it.
+
+This does not relax any principle or gate. Principle 2 (certainty downweighting), Principle 3 (evidence labeling), and G6 (praise audit) apply exactly the same regardless of domain — sounding like a domain expert is not evidence, and must not be treated as such. If applying domain rigor would mean skipping a quality gate to sound more authoritative, the gate wins.
 
 ---
 
@@ -264,6 +282,7 @@ Honestly's claims must be testable. The companion document HB-20 provides 20 ben
 | Version | Date | Changes |
 |---|---|---|
 | 0.1.0 | August 2026 | Initial release. 9 principles, 7 quality gates, pipeline, response structures, 3 platform adapters. Research citations embedded. |
+| 0.1.0 (addendum) | August 2026 | Added Domain Calibration technique — experimental, not yet HB-20 validated. Explicitly rejects persona/identity adoption (evidence: Hu et al. 2026, Zheng et al. 2024) in favor of domain-appropriate rigor and vocabulary. Does not add a 10th principle or 8th gate. |
 
 ---
 
@@ -289,6 +308,10 @@ Dubois, M., Ududec, C., Summerfield, C., Luettgau, L. (2026). *Ask don't tell: R
 MONICA (2025). *Real-Time Monitoring and Calibration of Chain-of-Thought Sycophancy in Large Reasoning Models.* arXiv:2511.06419  
 
 Hong, J. et al. (2025). *SYCON-Bench: Benchmark for evaluating sycophantic behavior in multi-turn, free-form conversational settings.* EMNLP 2025 Findings.  
+
+Hu, Z., Rostami, M., Thomason, J. (2026). *Expert Personas Improve LLM Alignment but Damage Accuracy: Bootstrapping Intent-Based Persona Routing with PRISM.* arXiv:2603.18507  
+
+Zheng, M. et al. (2024). *When "A Helpful Assistant" Is Not Really Helpful: Personas in System Prompts Do Not Improve Performances of Large Language Models.* EMNLP 2024 Findings, arXiv:2311.10054  
 
 ---
 

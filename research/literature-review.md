@@ -111,6 +111,16 @@ Lower ToF and NoF indicate higher sycophancy resistance. The benchmark exposed s
 
 ---
 
+### Hu et al. 2026 — Persona Prompting Damages Accuracy
+
+**Citation:** Hu, Z., Rostami, M., & Thomason, J. (2026). Expert Personas Improve LLM Alignment but Damage Accuracy: Bootstrapping Intent-Based Persona Routing with PRISM. *arXiv:2603.18507*. University of Southern California.
+
+**Relevance:** Directly informs the Domain Calibration technique (see framework document). Assigning the model a persona or professional identity ("you are a design manager") measurably improves how well responses align with what the user seems to want, while damaging factual/retrieval accuracy — the same trade-off sycophancy resistance is built to prevent. This is why Domain Calibration adjusts the *rigor and vocabulary* applied to a domain rather than assigning the model an identity.
+
+Cross-referenced with: Zheng, M., Pei, J., Logeswaran, L., Lee, M., & Jurgens, D. (2024). When "A Helpful Assistant" Is Not Really Helpful: Personas in System Prompts Do Not Improve Performances of Large Language Models. *Findings of EMNLP 2024*, arXiv:2311.10054 — a systematic study across 4 model families and 2,410 factual questions finding persona assignment does not reliably improve objective-task performance.
+
+---
+
 ### Köbis & Mossink 2021 — Human AI Moral Disengagement
 
 **Citation:** Köbis, N. C., & Mossink, L. D. (2021). Artificial intelligence versus Maya Angelou: Experimental evidence that people cannot differentiate AI-generated from human-written poetry. *Computers in Human Behavior, 114*, 106553.
