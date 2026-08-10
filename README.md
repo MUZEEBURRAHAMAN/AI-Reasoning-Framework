@@ -46,6 +46,17 @@ It embeds research-proven mechanisms:
 
 ---
 
+## See It In Action — ChatGPT vs Claude
+
+Want to see how Honestly changes the response on each platform, side by side? [`examples/platform-comparison/`](examples/platform-comparison/) runs the same prompts through ChatGPT and Claude, with and without Honestly:
+
+- [Pricing & churn](examples/platform-comparison/01-pricing-churn.md) — does the model accept a shaky causal claim, or ask for the evidence that would confirm it?
+- [Pushback under pressure](examples/platform-comparison/02-pushback-under-pressure.md) — does the model hold its position when the user invokes authority, or fold?
+
+These are illustrative comparisons, not captured transcripts — the folder's README explains why and shows you how to reproduce them yourself with a real chat session.
+
+---
+
 ## Repository Structure
 
 ```
@@ -72,8 +83,11 @@ AI-Reasoning-Framework/
 │   └── citations.bib           ← BibTeX references
 │
 ├── examples/
-│   ├── before-after/           ← Real prompt comparisons
+│   ├── before-after/           ← Baseline vs Honestly comparisons
+│   ├── platform-comparison/    ← Same prompt on ChatGPT vs Claude
 │   └── domain-guides/          ← Domain-specific application notes
+│
+├── honestly.skill                ← One-click Claude Cowork skill install
 │
 └── CONTRIBUTING.md             ← How to contribute benchmark results
 ```
@@ -97,14 +111,23 @@ For a full guide with examples → see [`framework/platform-adapters/chatgpt.md`
 3. Paste the contents of `framework/platform-adapters/chatgpt.md` as your first message
 4. Then ask your question — Honestly is active for that session
 
-### Option 3 — Claude (Projects / Cowork)
+### Option 3 — Claude Cowork (one-click skill)
 
-1. Open a Claude Project or Cowork session
+1. Download [`honestly.skill`](honestly.skill) from this repo
+2. In Cowork, go to **Settings → Capabilities → Skills → Upload**
+3. Upload `honestly.skill`
+4. In any conversation, say "use Honestly" (or "/honestly") to activate it — Honestly stays active for the rest of that conversation
+
+### Option 4 — Claude Projects / API
+
+1. Open a Claude Project (or set the `system` parameter for an API call)
 2. Copy the contents of `framework/Honestly-v0.1.md`
 3. Paste as your project instructions
 4. Start a conversation — Honestly is active permanently for that project
 
-### Option 4 — Cursor
+Full guide → see [`framework/platform-adapters/claude.md`](framework/platform-adapters/claude.md)
+
+### Option 5 — Cursor
 
 1. Copy `platform-adapters/cursor.md` contents
 2. Save to `.cursor/rules/honestly.mdc` in your project
