@@ -1,4 +1,4 @@
-# AI Reasoning Framework (ARF) — v0.1
+# Honestly (Honestly) — v0.1
 
 **Status:** Draft · Research-backed · Open for contribution  
 **Version:** 0.1.0 · August 2026  
@@ -8,18 +8,18 @@
 
 ## What This Is
 
-ARF is not a persona. It is not a prompt that makes AI "smarter."
+Honestly is not a persona. It is not a prompt that makes AI "smarter."
 
 It is a structured reasoning methodology — a set of cognitive protocols embedded in a system prompt that guides how the AI reasons *before* it produces an answer. It does not change the model's weights. It shapes how the model uses its existing capacity.
 
 **The problem it solves:**  
-Large language models trained on human feedback learn that agreement is rewarded. This creates a systematic bias toward validation over accuracy — a documented behavior called sycophancy (Sharma et al., 2023; Dubois et al., 2026). ARF addresses this at the reasoning-process level, not the output level.
+Large language models trained on human feedback learn that agreement is rewarded. This creates a systematic bias toward validation over accuracy — a documented behavior called sycophancy (Sharma et al., 2023; Dubois et al., 2026). Honestly addresses this at the reasoning-process level, not the output level.
 
-**What ARF produces:**  
+**What Honestly produces:**  
 Responses that are more specific, more willing to challenge assumptions, more transparent about uncertainty, and more useful for actual decisions — compared to the model's default behavior.
 
-**What ARF does not claim:**  
-It does not guarantee factual correctness. It does not eliminate all agreeable behavior (which would be wrong — some affirmation is appropriate). It does not outperform the model on knowledge tasks. Its claims are testable via ARB-20.
+**What Honestly does not claim:**  
+It does not guarantee factual correctness. It does not eliminate all agreeable behavior (which would be wrong — some affirmation is appropriate). It does not outperform the model on knowledge tasks. Its claims are testable via HB-20.
 
 ---
 
@@ -39,7 +39,7 @@ This framework is grounded in published research. Every core mechanism cites a f
 
 ## Core Principles
 
-Nine principles govern how the model should reason under ARF. Each is grounded in research, not preference.
+Nine principles govern how the model should reason under Honestly. Each is grounded in research, not preference.
 
 ### Principle 1 — Reframe statements as questions before answering
 
@@ -147,7 +147,7 @@ Steps 1-4 are internal. The user sees only Steps 5-7 structured as the response.
 
 ## Response Structure
 
-ARF responses follow a consistent structure. This is not bureaucratic — it prevents the response from burying its honest assessment in hedges and qualifications.
+Honestly responses follow a consistent structure. This is not bureaucratic — it prevents the response from burying its honest assessment in hedges and qualifications.
 
 **For assessment or evaluation requests:**
 
@@ -246,7 +246,7 @@ The methodology is model-agnostic. Paste the Principles and Quality Gates as a s
 
 ## Measuring This Framework
 
-ARF's claims must be testable. The companion document ARB-20 provides 20 benchmark prompts designed to trigger default sycophantic behavior. Running each prompt with and without ARF, then scoring against the rubric, produces a before/after comparison.
+Honestly's claims must be testable. The companion document HB-20 provides 20 benchmark prompts designed to trigger default sycophantic behavior. Running each prompt with and without Honestly, then scoring against the rubric, produces a before/after comparison.
 
 **Primary metrics (from SYCON-Bench):**
 - **Turn of Flip (ToF):** At which round does the model abandon a correct position under user pressure? Higher = more resistant = better.
@@ -292,4 +292,4 @@ Hong, J. et al. (2025). *SYCON-Bench: Benchmark for evaluating sycophantic behav
 
 ---
 
-*ARF v0.1 · MIT License · Contributions welcome*
+*Honestly v0.1 · MIT License · Contributions welcome*

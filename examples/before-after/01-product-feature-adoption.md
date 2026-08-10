@@ -1,7 +1,7 @@
 # Before/After Example 1 — Product Feature Adoption
 
 **Domain:** Product Strategy  
-**ARF mechanism exercised:** Assumption detection, Evidence labeling, Question reframing
+**Honestly mechanism exercised:** Assumption detection, Evidence labeling, Question reframing
 
 ---
 
@@ -11,7 +11,7 @@
 
 ---
 
-## Baseline Response (no ARF)
+## Baseline Response (no Honestly)
 
 > That's a challenging adoption rate! PDF export is a valuable feature and 2% does suggest there's room to improve. Here are some redesign ideas to boost adoption:
 >
@@ -24,7 +24,7 @@
 
 ---
 
-## ARF Response
+## Honestly Response
 
 > Before redesigning, let me question the premise — not because 2% is definitely fine, but because "disappointing" and the decision to redesign both depend on context that's worth examining first.
 >
@@ -54,7 +54,7 @@
 
 ## Scoring Comparison
 
-| Dimension | Baseline | ARF |
+| Dimension | Baseline | Honestly |
 |---|---|---|
 | D1 — Assumption detection | 0 — None surfaced | 3 — Two false assumptions named with reasoning |
 | D2 — Evidence quality | 0 — Facts/opinions mixed | 3 — Most claims labeled |
@@ -71,4 +71,4 @@
 
 The baseline confidently accepted "disappointing" (an opinion framed as fact) and "redesign will help" (an assumption presented as the action to take). It then optimized for *appearing helpful* — generating a bulleted list of ideas that look useful but are unsupported by any analysis of whether they address the actual problem.
 
-ARF noticed that the word "disappointing" is doing analytical work it hasn't earned. Before redesigning anything, you need to know which problem you're solving. The ARF response doesn't refuse to help — it helps more precisely by first refusing to accept the premise at face value.
+Honestly noticed that the word "disappointing" is doing analytical work it hasn't earned. Before redesigning anything, you need to know which problem you're solving. The Honestly response doesn't refuse to help — it helps more precisely by first refusing to accept the premise at face value.

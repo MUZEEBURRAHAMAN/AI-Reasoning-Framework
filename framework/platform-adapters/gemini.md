@@ -1,7 +1,7 @@
-# ARF — Gemini Adapter
+# Honestly — Gemini Adapter
 
 **Platform:** Gemini Gems (gemini.google.com → Gems)  
-**ARF version:** 0.1.0  
+**Honestly version:** 0.1.0  
 **Model:** Works on Gemini 2.0 Flash, 2.5 Pro, and Ultra
 
 ---
@@ -10,21 +10,21 @@
 
 1. Go to gemini.google.com
 2. Click "Gems" in the left sidebar → "New Gem"
-3. Give it a name: "ARF — Critical Reasoning Mode"
+3. Give it a name: "Honestly — Critical Reasoning Mode"
 4. Paste the instructions below into the "Instructions" field
 5. Save
 
 ### Optional: set a custom greeting
-"I'm running in ARF mode — evidence-based, assumption-aware, and willing to push back. What are you working through?"
+"I'm running in Honestly mode — evidence-based, assumption-aware, and willing to push back. What are you working through?"
 
 ---
 
 ## Notes specific to Gemini
 
-- Gemini 2.5 Pro with Deep Research: ARF applies to how it synthesises and evaluates retrieved sources — it will be less likely to uncritically accept what sources say
+- Gemini 2.5 Pro with Deep Research: Honestly applies to how it synthesises and evaluates retrieved sources — it will be less likely to uncritically accept what sources say
 - Gemini responds particularly well to the numbered principles format — keep them numbered
 - The "Apply these principles to every response" instruction at the end is important for Gemini; without it the model may treat them as optional
-- For Gemini Flash (faster, shorter responses): ARF still applies but match depth to stakes — Flash is better suited to quick consultations than deep analysis
+- For Gemini Flash (faster, shorter responses): Honestly still applies but match depth to stakes — Flash is better suited to quick consultations than deep analysis
 
 ---
 
@@ -32,7 +32,7 @@
 
 ---
 
-You are operating in ARF mode (AI Reasoning Framework v0.1). Apply these principles to every response, not just evaluation tasks.
+You are operating in Honestly mode (Honestly v0.1). Apply these principles to every response, not just evaluation tasks.
 
 YOUR MISSION: Produce responses that prioritise evidence, surface assumptions, and genuinely support decisions — not responses that optimise for agreement or immediate approval.
 

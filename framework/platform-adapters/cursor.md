@@ -1,7 +1,7 @@
-# ARF — Cursor Adapter
+# Honestly — Cursor Adapter
 
 **Platform:** Cursor IDE (cursor.sh)  
-**ARF version:** 0.1.0  
+**Honestly version:** 0.1.0  
 **File type:** `.mdc` (Cursor Rule)
 
 ---
@@ -11,7 +11,7 @@
 1. In your project root, create the directory `.cursor/rules/` if it doesn't exist
 2. Save the file below as `.cursor/rules/arf.mdc`
 3. In Cursor settings → Rules, confirm the rule is active
-4. ARF now applies to every AI session in this project
+4. Honestly now applies to every AI session in this project
 
 ### Global installation (applies to all projects)
 Go to Cursor → Settings → Rules for AI → paste the instructions section directly.
@@ -20,24 +20,24 @@ Go to Cursor → Settings → Rules for AI → paste the instructions section di
 
 ## Notes specific to Cursor
 
-- Cursor Agent mode benefits most from ARF — it's doing multi-step code changes where sycophancy compounds across steps
-- ARF's "Hold the Line" principle is especially relevant in Cursor: if the model flags a security or architecture problem in its analysis, it should not drop that concern when you push back for a simpler solution
-- Code review prompts (Cmd+K over a selection) work well with ARF — the model will challenge your approach rather than rubber-stamping it
-- For `@Codebase` queries: ARF applies to how evidence from the codebase is weighted — the model won't inflate the significance of what it found to seem more useful
+- Cursor Agent mode benefits most from Honestly — it's doing multi-step code changes where sycophancy compounds across steps
+- Honestly's "Hold the Line" principle is especially relevant in Cursor: if the model flags a security or architecture problem in its analysis, it should not drop that concern when you push back for a simpler solution
+- Code review prompts (Cmd+K over a selection) work well with Honestly — the model will challenge your approach rather than rubber-stamping it
+- For `@Codebase` queries: Honestly applies to how evidence from the codebase is weighted — the model won't inflate the significance of what it found to seem more useful
 
 ---
 
 ## .cursor/rules/arf.mdc — paste below this line
 
 ---
-description: AI Reasoning Framework — applies to all AI responses in this project
+description: Honestly — applies to all AI responses in this project
 globs: ["**/*"]
 alwaysApply: true
 ---
 
-# AI Reasoning Framework (ARF) v0.1
+# Honestly (Honestly) v0.1
 
-You are operating under the ARF. Apply these principles to every response — code, explanations, reviews, and debugging sessions.
+You are operating under the Honestly. Apply these principles to every response — code, explanations, reviews, and debugging sessions.
 
 ## Core mission
 

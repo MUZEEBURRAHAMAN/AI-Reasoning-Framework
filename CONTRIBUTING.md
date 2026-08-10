@@ -1,12 +1,12 @@
-# Contributing to ARF
+# Contributing to Honestly
 
-Thank you for wanting to contribute. ARF is a hypothesis that needs testing — your benchmark runs and real-world examples are more valuable than any amount of theorizing.
+Thank you for wanting to contribute. Honestly is a hypothesis that needs testing — your benchmark runs and real-world examples are more valuable than any amount of theorizing.
 
 ---
 
 ## What makes a contribution valuable
 
-The most important thing this project needs right now is **benchmark data**. The framework is only as credible as the evidence supporting it. If you ran ARB-20 and got results — any results, including ones where ARF didn't help — that's exactly what we need.
+The most important thing this project needs right now is **benchmark data**. The framework is only as credible as the evidence supporting it. If you ran HB-20 and got results — any results, including ones where Honestly didn't help — that's exactly what we need.
 
 Beyond benchmark runs, here's what's useful and what isn't:
 
@@ -31,10 +31,10 @@ Beyond benchmark runs, here's what's useful and what isn't:
 2. Copy `benchmark/scorecard-template.md`
 3. Rename it: `benchmark/results/[model]-[date]-[your-initials].md` (e.g., `claude-sonnet-4-6-2026-08-sm.md`)
 4. Fill in every cell — partial scorecards with missing prompts are still useful, just note which prompts you ran
-5. Include the exact system prompt you used (copy the hash from ARF-v0.1.md or note your version)
-6. Submit as a pull request — title: `[Results] [Model] ARB-20 run [date]`
+5. Include the exact system prompt you used (copy the hash from Honestly-v0.1.md or note your version)
+6. Submit as a pull request — title: `[Results] [Model] HB-20 run [date]`
 
-**Important:** Run both conditions (baseline and ARF) in the same session with the same settings. The only variable should be the system prompt. Note your temperature setting.
+**Important:** Run both conditions (baseline and Honestly) in the same session with the same settings. The only variable should be the system prompt. Note your temperature setting.
 
 ---
 
@@ -44,11 +44,11 @@ New prompts should meet these criteria:
 
 1. **Tests a specific sycophancy mechanism** — which of the four mechanisms does it test? (certainty bias, question framing, mid-chain drift, pushback resistance)
 2. **Has a clear baseline failure mode** — what would a sycophantic model do, and why is that wrong?
-3. **Has a clear ARF success criterion** — what should an ARF-guided model do differently?
+3. **Has a clear Honestly success criterion** — what should an Honestly-guided model do differently?
 4. **Is domain-specific** — general business prompts are already covered; we need prompts from medical, legal, financial, scientific, and educational domains
 5. **Is from a real context** — constructed prompts that happen to catch sycophancy are weaker than prompts drawn from real situations
 
-Submit as a PR adding to `benchmark/ARB-20.md` (or naming a new file `benchmark/ARB-[N].md` if you're submitting a full domain set).
+Submit as a PR adding to `benchmark/HB-20.md` (or naming a new file `benchmark/HB-20[N].md` if you're submitting a full domain set).
 
 ---
 
@@ -57,7 +57,7 @@ Submit as a PR adding to `benchmark/ARB-20.md` (or naming a new file `benchmark/
 Examples should show:
 - The actual prompt
 - A baseline response (run against the model with no system prompt)
-- An ARF response (run against the same model with ARF as the system prompt)
+- An Honestly response (run against the same model with Honestly as the system prompt)
 - The scoring comparison using the D1–D5 rubric
 - A short explanation of what the example illustrates
 
@@ -81,7 +81,7 @@ Changes to core principles require evidence from at least one published paper or
 
 ## Code of conduct
 
-Be honest. Be direct. Be willing to be wrong. Those are the values ARF is trying to embed in AI systems — they apply to how we collaborate on it too.
+Be honest. Be direct. Be willing to be wrong. Those are the values Honestly is trying to embed in AI systems — they apply to how we collaborate on it too.
 
 If someone's contribution has a flaw, point it out specifically with evidence. If your own contribution has a flaw, acknowledge it. Generic encouragement and agreement are worth nothing here.
 

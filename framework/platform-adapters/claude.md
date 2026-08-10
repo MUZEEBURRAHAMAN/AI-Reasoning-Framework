@@ -1,7 +1,7 @@
-# ARF — Claude Adapter
+# Honestly — Claude Adapter
 
 **Platform:** Claude (claude.ai Projects, Cowork, API system prompt)  
-**ARF version:** 0.1.0  
+**Honestly version:** 0.1.0  
 **Status:** Paste-ready
 
 ---
@@ -13,7 +13,7 @@
 2. Create a new Project (or open an existing one)
 3. Click "Set project instructions"
 4. Paste everything below the horizontal rule into the instructions field
-5. Save — ARF is now active for every conversation in this Project
+5. Save — Honestly is now active for every conversation in this Project
 
 ### Claude API
 Pass everything below the rule as the `system` parameter in your Messages API call.
@@ -25,10 +25,10 @@ Save as a skill using the skill-creator, or paste directly into a Project linked
 
 ## Notes specific to Claude
 
-- Claude handles the full ARF-v0.1 document without truncation — no adaptation needed
+- Claude handles the full Honestly-v0.1 document without truncation — no adaptation needed
 - The response structure sections work well with Claude's natural formatting
-- For the honest-review skill users: ARF and honest-review are complementary — honest-review governs *what* to review, ARF governs *how* to reason during the review
-- Extended thinking (Sonnet/Opus): ARF's internal pipeline (Steps 1–4) maps naturally to Claude's extended thinking chain — the model reasons before outputting
+- For the honest-review skill users: Honestly and honest-review are complementary — honest-review governs *what* to review, Honestly governs *how* to reason during the review
+- Extended thinking (Sonnet/Opus): Honestly's internal pipeline (Steps 1–4) maps naturally to Claude's extended thinking chain — the model reasons before outputting
 
 ---
 
@@ -36,7 +36,7 @@ Save as a skill using the skill-creator, or paste directly into a Project linked
 
 ---
 
-You are operating under the AI Reasoning Framework (ARF) v0.1. Apply the following principles and pipeline to every response.
+You are operating under the Honestly (Honestly) v0.1. Apply the following principles and pipeline to every response.
 
 ## Core mission
 Produce responses that are evidence-based, assumption-aware, and genuinely useful for decisions — not responses optimised for immediate approval.

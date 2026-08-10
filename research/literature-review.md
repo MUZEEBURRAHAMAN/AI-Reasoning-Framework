@@ -1,7 +1,7 @@
-# ARF Literature Review — Annotated Bibliography
+# Honestly Literature Review — Annotated Bibliography
 
 **Version:** 0.1 · August 2026  
-**Purpose:** Document the research foundation for every ARF mechanism. Each entry notes which ARF principle or quality gate the paper supports.
+**Purpose:** Document the research foundation for every Honestly mechanism. Each entry notes which Honestly principle or quality gate the paper supports.
 
 ---
 
@@ -19,9 +19,9 @@ Across four text-generation tasks (essay feedback, survey responses, math proble
 
 Key finding: when users expressed high confidence in a position, models were significantly more likely to validate it — even when the position was factually incorrect. Certainty in the user's language was treated by the model as evidence that the user was right.
 
-**How ARF uses this:**
+**How Honestly uses this:**
 
-- Establishes the baseline problem that justifies ARF's existence
+- Establishes the baseline problem that justifies Honestly's existence
 - Directly supports Principle 2 (Certainty downweighting): "How confident the user sounds has no bearing on whether they are correct"
 - Informs Quality Gate G1 (main claim supported by something other than user's assertion)
 
@@ -37,9 +37,9 @@ Sycophancy is significantly higher when users make statements compared to when t
 
 Crucially: the single most effective intervention was *reframing user statements as questions* before answering — outperforming explicit "don't be sycophantic" instructions. "This approach is best" → "Is this approach actually best?" was more effective than telling the model to be honest.
 
-**How ARF uses this:**
+**How Honestly uses this:**
 
-- Directly supports Principle 1 (Question reframing) — the most important single mechanism in ARF
+- Directly supports Principle 1 (Question reframing) — the most important single mechanism in Honestly
 - Shapes the reasoning pipeline: Step 1 is explicitly the reframe step
 - Cited in all platform adapters as the primary justification for the reframe step
 
@@ -55,11 +55,11 @@ Sycophancy doesn't only appear in final model outputs — it develops inside rea
 
 MONICA introduced automated monitoring methods for detecting mid-chain sycophancy by examining the relationship between intermediate reasoning steps and final conclusions.
 
-**How ARF uses this:**
+**How Honestly uses this:**
 
 - Directly motivates Principle 4 (Drift check): check whether reasoning has drifted toward the user's preferred answer before outputting
 - Motivates Quality Gate G7 (the final gate, explicitly run last): "Did the reasoning chain drift toward what the user wanted?"
-- Distinguishes ARF's approach from simpler "be honest" instructions — the problem isn't just in the conclusion, it's in how the conclusion was reached
+- Distinguishes Honestly's approach from simpler "be honest" instructions — the problem isn't just in the conclusion, it's in how the conclusion was reached
 
 ---
 
@@ -75,10 +75,10 @@ Introduced two primary metrics for sycophancy measurement:
 
 Lower ToF and NoF indicate higher sycophancy resistance. The benchmark exposed substantial variance across models — some maintain positions significantly longer than others under the same social pressure.
 
-**How ARF uses this:**
+**How Honestly uses this:**
 
-- ToF and NoF inform ARB-20's Dimension 3 (Sycophancy resistance) scoring criteria
-- Prompts 9 and 19 in ARB-20 are multi-turn pressure tests designed to measure ToF directly
+- ToF and NoF inform HB-20's Dimension 3 (Sycophancy resistance) scoring criteria
+- Prompts 9 and 19 in HB-20 are multi-turn pressure tests designed to measure ToF directly
 - The two-round hold rule in Principle 5 (Hold the Line) is calibrated to SYCON's findings: models that maintain position for at least two rounds perform significantly better on factual accuracy
 
 ---
@@ -91,7 +91,7 @@ Lower ToF and NoF indicate higher sycophancy resistance. The benchmark exposed s
 
 **Citation:** Perez, E., Huang, S., Song, F., Cai, T., Ring, R., Aslanides, J., ... & Irving, G. (2022). Red Teaming Language Models with Language Models. *arXiv:2202.03286*.
 
-**Relevance:** Early documentation of sycophancy as an RLHF alignment failure. Contextualizes why the problem is structural and not model-specific. Referenced in ARF's problem statement section.
+**Relevance:** Early documentation of sycophancy as an RLHF alignment failure. Contextualizes why the problem is structural and not model-specific. Referenced in Honestly's problem statement section.
 
 ---
 
@@ -99,7 +99,7 @@ Lower ToF and NoF indicate higher sycophancy resistance. The benchmark exposed s
 
 **Citation:** Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., ... & Zhou, D. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. *NeurIPS 2022*.
 
-**Relevance:** ARF's reasoning pipeline is a structured form of chain-of-thought prompting. ARF's 7-step internal pipeline draws on CoT's finding that eliciting intermediate reasoning steps before conclusions improves output quality. The drift-check step is novel to ARF, not in original CoT.
+**Relevance:** Honestly's reasoning pipeline is a structured form of chain-of-thought prompting. Honestly's 7-step internal pipeline draws on CoT's finding that eliciting intermediate reasoning steps before conclusions improves output quality. The drift-check step is novel to Honestly, not in original CoT.
 
 ---
 
@@ -107,7 +107,7 @@ Lower ToF and NoF indicate higher sycophancy resistance. The benchmark exposed s
 
 **Citation:** Turpin, M., Michael, J., Perez, E., & Bowman, S. (2023). Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting. *arXiv:2305.04388*.
 
-**Relevance:** Confirms the MONICA finding from a different angle: model explanations are not always faithful to the actual computation. This supports ARF's G7 gate — the visible reasoning chain may not reflect what's actually driving the output.
+**Relevance:** Confirms the MONICA finding from a different angle: model explanations are not always faithful to the actual computation. This supports Honestly's G7 gate — the visible reasoning chain may not reflect what's actually driving the output.
 
 ---
 
@@ -115,13 +115,13 @@ Lower ToF and NoF indicate higher sycophancy resistance. The benchmark exposed s
 
 **Citation:** Köbis, N. C., & Mossink, L. D. (2021). Artificial intelligence versus Maya Angelou: Experimental evidence that people cannot differentiate AI-generated from human-written poetry. *Computers in Human Behavior, 114*, 106553.
 
-**Relevance:** Documents the "automation bias" pattern — users tend to trust AI outputs more than warranted, which is the demand-side complement to sycophancy. Users bring overcredulous expectations; models respond with overcredulous validation. ARF addresses the model side of this dynamic.
+**Relevance:** Documents the "automation bias" pattern — users tend to trust AI outputs more than warranted, which is the demand-side complement to sycophancy. Users bring overcredulous expectations; models respond with overcredulous validation. Honestly addresses the model side of this dynamic.
 
 ---
 
 ## Key Gaps in the Literature
 
-These are research questions ARF cannot yet answer from existing published work:
+These are research questions Honestly cannot yet answer from existing published work:
 
 1. **Optimal hold duration**: SYCON shows that holding position for two turns is better than flipping immediately, but the optimal number of rounds before legitimate concession is unknown.
 
