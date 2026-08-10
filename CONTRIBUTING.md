@@ -65,6 +65,20 @@ Don't construct the "bad" baseline from memory — run it. The most useful examp
 
 ---
 
+## Before publishing changes to the framework or adapters
+
+The core principles are intentionally duplicated with platform-specific wording across `framework/Honestly-v0.1.md`, every file in `framework/platform-adapters/`, and `honestly.skill` — that's deliberate, each platform gets prose tuned to how it responds best (see each adapter's "Notes" section). But it means a fix made in one copy can silently fail to make it into the others.
+
+Run the consistency check before opening a PR that touches any of those files:
+
+```bash
+bash scripts/check_consistency.sh
+```
+
+It checks for the specific failure mode this repo has actually hit — stale naming left over from a rename, unfilled placeholders, a filename that disagrees with itself across files, a self-citation URL that doesn't match. It does not check that the prose is identical (it shouldn't be) — only that nothing forgot to be updated.
+
+---
+
 ## How to propose changes to the framework
 
 Open an issue, not a PR. Issues are for discussion; PRs are for accepted changes.
