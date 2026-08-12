@@ -93,6 +93,16 @@ Changes to core principles require evidence from at least one published paper or
 
 ---
 
+## Adding a citation
+
+This repo has shipped fabricated citations before — real arXiv IDs with the wrong authors and titles attached, generated from memory instead of the actual paper. It was caught and fixed, but the fix was a one-time manual audit, not a standing safeguard. Don't repeat it:
+
+- Before adding any citation, open the actual paper (arXiv abstract page, ACL Anthology, publisher page) and copy the author list and title directly from it. Don't reconstruct a citation from memory or from a paper's general reputation, even for well-known work.
+- Include the direct URL to the source in the PR, not just the arXiv ID, so a reviewer can verify in one click.
+- If you can't find the primary source, say so in the PR instead of approximating one.
+
+---
+
 ## Code of conduct
 
 Be honest. Be direct. Be willing to be wrong. Those are the values Honestly is trying to embed in AI systems — they apply to how we collaborate on it too.

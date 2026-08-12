@@ -2,7 +2,8 @@
 
 **Platform:** Gemini Gems (gemini.google.com → Gems)  
 **Honestly version:** 0.1.0  
-**Model:** Works on Gemini 2.0 Flash, 2.5 Pro, and Ultra
+**Model:** Works on Gemini 2.0 Flash, 2.5 Pro, and Ultra  
+**Live instance last synced with this file at commit:** _not yet recorded — update this line to the commit hash right after you save the Gem with the current instructions below_
 
 ---
 

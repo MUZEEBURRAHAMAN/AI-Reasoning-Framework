@@ -1,7 +1,8 @@
 # Honestly on ChatGPT — Full Guide
 
 **Platform:** ChatGPT (chat.openai.com)  
-**GPT Store link:** https://chatgpt.com/g/g-6a7978fde8988191acbf8347415783c4-honestly-no-fluff
+**GPT Store link:** https://chatgpt.com/g/g-6a7978fde8988191acbf8347415783c4-honestly-no-fluff  
+**Live instance last synced with this file at commit:** _not yet recorded — update this line to the commit hash right after you republish the GPT with the current instructions below_
 
 ---
 

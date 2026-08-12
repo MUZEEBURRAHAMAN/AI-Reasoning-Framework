@@ -55,6 +55,8 @@ Want to see how Honestly changes the response on each platform, side by side? [`
 
 These are illustrative comparisons, not captured transcripts — the folder's README explains why and shows you how to reproduce them yourself with a real chat session.
 
+Want to see Domain Calibration specifically? [`examples/domain-guides/`](examples/domain-guides/) shows it applied to [medical](examples/domain-guides/01-medical.md) and [legal](examples/domain-guides/02-legal.md) prompts — real domain rigor without the model adopting a persona to produce it.
+
 ---
 
 ## Repository Structure
@@ -118,6 +120,8 @@ For a full guide with examples → see [`framework/platform-adapters/chatgpt.md`
 2. In Cowork, go to **Settings → Capabilities → Skills → Upload**
 3. Upload `honestly.skill`
 4. In any conversation, say "use Honestly" (or "/honestly") to activate it — Honestly stays active for the rest of that conversation
+
+**Installed skills don't auto-update.** If you've already installed `honestly.skill`, re-download and re-upload it after framework changes to stay current. Last synced with a live install: _not yet recorded — update this line to the commit hash you installed from_.
 
 ### Option 4 — Claude Projects / API
 
@@ -223,7 +227,7 @@ This framework cites published research, not intuition. Every core mechanism has
 |---|---|---|
 | v0.1 | ✅ Complete | Framework doc + HB-20 benchmark |
 | v0.2 | 🔄 In progress | Community benchmark results (need 10+ runs) |
-| v0.3 | Planned | Domain-specific guides + platform adapters |
+| v0.3 | 🔄 In progress | Domain-specific guides (medical, legal done; financial, scientific still needed) + platform adapters |
 | v0.4 | Planned | HB-20 (full 100-prompt benchmark) |
 | v1.0 | Future | Stable specification with reproducible benchmark results |
 
